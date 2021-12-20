@@ -1,0 +1,24 @@
+#include "ztjs.h"
+#include "main.h"
+void zitaijiesuan(float x,float y,float z)
+{
+	int y0=0,x0=130,z0=0,x1=-20,y1=60,z1=0,x2=0,y2=-60,z2=60;
+  float X ,Y ,Z;
+    x=x*pi/180;
+    y=y*pi/180;
+    z=z*pi/180;
+    X =x0*(cos(y)*cos(z) - sin(x)*sin(y)*sin(z)) - sin(z)*(y1*cos(x) - z1*sin(x)) + z0*(cos(z)*sin(y) + cos(y)*sin(x)*sin(z)) + x1*cos(z) + x2*cos(z) - y2*sin(z) - y0*cos(x)*sin(z);
+    Y = cos(z)*(y1*cos(x) - z1*sin(x)) + x0*(cos(y)*sin(z) + cos(z)*sin(x)*sin(y)) + z0*(sin(y)*sin(z) - cos(y)*cos(z)*sin(x)) + y2*cos(z) + x1*sin(z) + x2*sin(z) + y0*cos(x)*cos(z);
+    Z = z2 + y0*sin(x) + y1*sin(x) + z1*sin(x) + z0*cos(x)*cos(y) - x0*cos(x)*sin(y);
+	  printf("%dX\r\n",(int)(X*100));
+		 HAL_Delay(200);
+		printf("%dY\r\n",(int)(Y *100));
+		 HAL_Delay(200);
+		printf("%dZ\r\n",(int)(Z*100));
+	 HAL_Delay(200);
+
+}
+
+
+
+

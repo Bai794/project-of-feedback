@@ -1,0 +1,6 @@
+r
+halt
+loadfile "d:\stm32 code\feedback\MDK-ARM\build\CAN2\MDK-ARM.hex"
+r
+go
+exit

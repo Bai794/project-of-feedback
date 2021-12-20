@@ -1,0 +1,6 @@
+objcopy.exe --update-section ER_IROM1="d:\stm32 code\feedback\MDK-ARM\build\CAN2\MDK-ARM.bin" "d:\stm32 code\feedback\MDK-ARM\build\CAN2\MDK-ARM.axf" "d:\stm32 code\feedback\MDK-ARM\build\CAN2\MDK-ARM.elf"
+
+objcopy.exe: d:\stm32 code\feedback\MDK-ARM\build\CAN2\MDK-ARM.elf: warning: allocated section `RW_IRAM1' not in segment
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319
